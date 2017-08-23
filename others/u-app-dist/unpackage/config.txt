@@ -1,0 +1,9 @@
+包名：tjnit.com.newgonghuistore
+微信：AppID: wx8b1e56f76aaf8ece
+	AppSecret: 5f7b95bc8c91484933754aa1dcbb3563
+个推：
+	AppID: aTLsH5xKcN7m3pHRFEo1MA
+	AppKey：Avqduvv0Sr6fQHub4pmHG5
+	AppSecret：D4EHO03Wk66w3mTZTZmJg9
+	MasterSecret：4tHLA1xRFn7EKmZhpyg6O6
+qq: APP ID1105812997  ,APP KEY SnkTUGzjmeuvQSz1

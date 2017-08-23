@@ -1,0 +1,766 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H598F2BB1",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "爱工惠",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "3.2.1",/*应用版本名称*/
+		"code": "21"
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "dist/index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+		"Accelerometer": {
+			"description": "访问加速度感应器"
+		},
+		"Audio": {
+			"description": "访问麦克风"
+		},
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Camera": {
+			"description": "访问摄像头"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+
+		"Device": {
+			"description": "访问设备信息"
+		},
+		"Downloader": {
+			"description": "文件下载管理"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"File": {
+			"description": "访问本地文件系统"
+		},
+		"Gallery": {
+			"description": "访问系统相册"
+		},
+		"Geolocation": {
+			"description": "访问位置信息"
+		},
+		"Invocation": {
+			"description": "使用Native.js能力"
+		},
+
+		"Orientation": {
+			"description": "访问方向感应器"
+		},
+		"Proximity": {
+			"description": "访问距离感应器"
+		},
+		"Storage": {
+			"description": "管理应用本地数据"
+		},
+
+		"Uploader": {
+			"description": "管理文件上传任务"
+		},
+		"Runtime": {
+			"description": "访问运行期环境"
+		},
+		"XMLHttpRequest": {
+			"description": "跨域网络访问"
+		},
+		"Zip": {
+			"description": "文件压缩与解压缩"
+		},
+		"Barcode": {
+			"description": "管理二维码扫描插件"
+		},
+
+		"Speech": {
+			"description": "管理语音识别插件"
+		},
+		"Webview": {
+			"description": "窗口管理"
+		},
+		"NativeUI": {
+			"description": "原生UI控件"
+		},
+		"Navigator": {
+			"description": "浏览器信息"
+		},
+		"NativeObj": {
+			"description": "原生对象"
+		},
+		"Push": {},
+		
+		"Share": {},"Statistic":{}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": false,"delay":"3000"
+		},
+		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"plugins": {"statics":{"umeng":{"appkey_ios":"58aa9a8dcae7e721f8000154","channelid_ios":"aigonghui","appkey_android":"58a545ab75ca3535d2001d2c ","channelid_android":"aigonghui"}},
+				"share": {
+					"qq": {
+						"appid": "1105812997  ",
+						"description": "QQ分享"
+					},
+					"weixin": {
+						"appid": "wx8b1e56f76aaf8ece",
+						"appsecret": "5f7b95bc8c91484933754aa1dcbb3563",
+						"description": "可选，微信分享"
+					}
+				},
+				"push": {
+					"igexin": {
+						"appid": "aTLsH5xKcN7m3pHRFEo1MA",
+						"appkey": "Avqduvv0Sr6fQHub4pmHG5",
+						"appsecret": "D4EHO03Wk66w3mTZTZmJg9"
+					}
+				}
+			},
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": ["<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.GET_TASKS\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.RECEIVE_USER_PRESENT\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>"]
+			},
+			"orientation": ["portrait-primary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png",/*iPhone高分屏程序图标，分辨率：114x114*/
+						"retina7": "unpackage/res/icons/120x120.png",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png",
+						"retina8": "unpackage/res/icons/180x180.png",
+						"settings-retina8": "unpackage/res/icons/87x87.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png"
+					}
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png","xxxhdpi":"unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {"retina55":"F:/sx_union/02_产品设计/08_界面原型/3、启动页/iPhone/1242X2208.png","retina47":"F:/sx_union/02_产品设计/08_界面原型/3、启动页/iPhone/750X1334.png","retina40":"F:/sx_union/02_产品设计/08_界面原型/3、启动页/iPhone/640X1136.png","retina55l":"F:/sx_union/02_产品设计/08_界面原型/3、启动页/iPhone/2208X1242.png","retina35":"F:/sx_union/02_产品设计/08_界面原型/3、启动页/iPhone/640-960.png"
+						 /*iPhone3启动图片选，分辨率：320x480*/
+						/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						
+						
+						
+						
+					},
+					"ipad": {
+						 /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "F:/sx_union/02_产品设计/08_界面原型/3、启动页/ipad/1536X2008.png",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						 /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "F:/sx_union/02_产品设计/08_界面原型/3、启动页/ipad/2048X1496.png", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						 /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "F:/sx_union/02_产品设计/08_界面原型/3、启动页/ipad/1536X2048.png",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						 /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": "F:/sx_union/02_产品设计/08_界面原型/3、启动页/ipad/2048X1536.png","portrait":"F:/sx_union/02_产品设计/08_界面原型/3、启动页/ipad/768X1004.png","portrait7":"F:/sx_union/02_产品设计/08_界面原型/3、启动页/ipad/768X1024.png","landscape":"F:/sx_union/02_产品设计/08_界面原型/3、启动页/ipad/1024X748.png","landscape7":"F:/sx_union/02_产品设计/08_界面原型/3、启动页/ipad/1204X768.png"
+					}
+				},
+				"android": {
+					 /*普通屏启动图片，分辨率：240x282*/
+					 /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "F:/sx_union/02_产品设计/08_界面原型/3、启动页/安卓/480X762.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "F:/sx_union/02_产品设计/08_界面原型/3、启动页/安卓/720X1242.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "F:/sx_union/02_产品设计/08_界面原型/3、启动页/安卓/1080X1882.png"
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"dist/index.html": {
+				"resources": [
+					"dist/static/js/manifest.js",
+					"dist/static/js/app.js",
+					"dist/static/js/vendor.js",
+					"dist/static/css/app.css"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"src/components/notice.vue",
+				"src/components/imgs/eight6.png",
+				"src/components/imgs/tel.png",
+				"src/components/imgs/zyactive.png",
+				"src/components/integral_make.vue",
+				"test/unit/specs/Hello.spec.js",
+				"src/components/imgs/ghjz.png",
+				"dist/static/js/42.js",
+				"src/components/imgs/1234.png",
+				"src/components/imgs/vip.png",
+				"package.json",
+				"src/components/imgs/layer4.png",
+				"src/components/mine_authcode.vue",
+				"config/dev.env.js",
+				"README.md",
+				"test/unit/karma.conf.js",
+				"dist/static/js/35.js",
+				"src/components/imgs/heart2.png",
+				"src/components/imgs/jifen.png",
+				"src/components/imgs/collect.png",
+				"src/components/imgs/hot.png",
+				"src/components/index_navimgs/nav6.png",
+				"src/components/mine_activity.vue",
+				"src/components/imgs/zanbefore.png",
+				"dist/static/js/37.js",
+				"src/components/imgs/dingdan.png",
+				"src/components/imgs/defaulthead.png",
+				"src/components/imgs/zanafter.png",
+				"src/components/imgs/rotate-static.png",
+				"src/components/imgs/layer2.png",
+				"src/components/join.vue",
+				"src/assets/logo.png",
+				"dist/static/js/50.js",
+				"src/components/mine_address.vue",
+				"dist/static/js/36.js",
+				"src/main.js",
+				"src/components/imgs/eight4bak.png",
+				"test/e2e/nightwatch.conf.js",
+				"dist/static/img/jifenbg2.png",
+				"dist/static/js/38.js",
+				"src/components/index_navimgs/nav1.png",
+				"src/components/imgs/lotteryBtn.png",
+				"src/components/imgs/errorjifen.png",
+				"src/components/imgs/sc.png",
+				"src/components/unionInfo.vue",
+				"src/components/imgs/zhuanfont.png",
+				"dist/static/fonts/element-icons.eot",
+				"src/components/imgs/activity.png",
+				"src/components/imgs/zy.png",
+				"dist/static/img/bohui.png",
+				"dist/static/img/banner1.png",
+				"src/components/imgs/slidbtn.png",
+				"src/components/imgs/heart1.png",
+				"src/components/imgs/qq .png",
+				"dist/static/img/jifenbg.png",
+				"src/js/modular.js",
+				"src/components/mine_security.vue",
+				"src/components/searchpage.vue",
+				"src/components/cache.vue",
+				"src/components/imgs/jifenbg2.png",
+				"src/components/guide.vue",
+				"dist/static/js/44.js",
+				"src/components/imgs/lotteryContent.png",
+				"src/components/forumdetail.vue",
+				"src/components/imgs/pinglun.png",
+				"src/components/imgs/qiandaobtn.png",
+				"dist/static/img/slid2.png",
+				"config/prod.env.js",
+				"dist/static/fonts/element-icons.ttf",
+				"build/webpack.base.conf.js",
+				"src/components/imgs/wechat.png",
+				"test/unit/index.js",
+				"src/components/imgs/defaultyhq.png",
+				"src/components/heartask_things.vue",
+				"src/components/imgs/imgadd.png",
+				"src/components/imgs/errorpng0.png",
+				"src/components/imgs/finish.png",
+				"src/components/mine.vue",
+				"dist/static/js/48.js",
+				"src/components/imgs/banner1.png",
+				"dist/static/js/28.js",
+				"src/components/imgs/checkjifen.png",
+				"dist/static/js/45.js",
+				"src/components/template/luckDraw.vue",
+				"src/components/imgs/life1.png",
+				"src/components/mine_sex.vue",
+				"src/components/imgs/askbg.png",
+				"src/components/imgs/eight8bak.png",
+				"dist/static/js/46.js",
+				"src/components/imgs/jifenbg.png",
+				"src/components/mine_setting.vue",
+				"src/components/imgs/eight1bak.png",
+				"src/components/imgs/zhigongshequ.png",
+				"src/components/mine_address_updata.vue",
+				"src/components/mine_ghlist.vue",
+				"build/check-versions.js",
+				"dist/static/js/47.js",
+				"src/components/index_navimgs/yes.png",
+				"src/components/imgs/eight8.png",
+				"src/components/imgs/huifuli.png",
+				"src/components/imgs/eight3bak.png",
+				"dist/static/js/41.js",
+				"src/components/imgs/eight1.png",
+				"dist/static/js/13.js",
+				"src/components/imgs/share.png",
+				"src/components/mine_setting_universal.vue",
+				"dist/static/js/9.js",
+				"src/components/home.vue",
+				"src/components/imgs/slid1.png",
+				"src/components/activityDetails.vue",
+				"src/components/imgs/zhuanfont2.png",
+				"src/components/imgs/eight5.png",
+				"src/components/imgs/eight2.png",
+				"src/components/integral_orderdetail.vue",
+				"dist/static/js/23.js",
+				"src/components/hearttest_result.vue",
+				"dist/static/js/12.js",
+				"src/components/imgs/eight4.png",
+				"dist/static/js/1.js",
+				"src/components/imgs/jf.png",
+				"src/components/imgs/eight7.png",
+				"dist/static/img/tongguo.png",
+				"src/components/mine_advice.vue",
+				"src/components/imgs/eight2bak.png",
+				"src/components/imgs/tongguo.png",
+				"src/components/imgs/news1.jpg",
+				"src/components/imgs/eight6bak.png",
+				"dist/static/js/27.js",
+				"src/components/unionnews.vue",
+				"src/components/signin.vue",
+				"dist/static/js/10.js",
+				"src/components/unionnotice.vue",
+				"src/components/imgs/getjifen.png",
+				"src/components/imgs/shoucang.png",
+				"src/components/imgs/layer1.png",
+				"src/components/imgs/heart3.png",
+				"src/plugins/ontouch.js",
+				"src/components/imgs/hd.png",
+				"src/components/mine_subname.vue",
+				"src/components/testlsz.vue",
+				"dist/static/js/2.js",
+				"dist/static/js/49.js",
+				"src/components/imgs/qiandaobg.png",
+				"src/components/integra_sureorderl.vue",
+				"src/components/imgs/juli.png",
+				"dist/static/js/31.js",
+				"src/components/index_navimgs/chat.png",
+				"src/components/hearttest_info.vue",
+				"src/components/imgs/errorBanner.png",
+				"src/components/activity.vue",
+				"src/components/imgs/life2.png",
+				"src/components/imgs/slid3.png",
+				"dist/static/js/39.js",
+				"src/vuex/store.js",
+				"dist/static/js/26.js",
+				"src/components/imgs/banner3.png",
+				"src/components/integral_order.vue",
+				"src/plugins/mui.js",
+				"dist/static/js/51.js",
+				"src/components/details.vue",
+				"src/components/imgs/3824416.jpg",
+				"src/components/imgs/phone.png",
+				"src/components/imgs/button.png",
+				"dist/static/img/askbg.png",
+				"src/components/imgs/banner2.png",
+				"src/components/imgs/layer3.png",
+				"dist/static/img/errorpng.png",
+				"src/components/imgs/qd.png",
+				"src/components/imgs/errorpng.png",
+				"src/components/imgs/news2.png",
+				"dist/static/js/22.js",
+				"dist/static/img/nav8.png",
+				"src/components/imgs/jifenrules.png",
+				"src/components/login.vue",
+				"src/components/message.vue",
+				"src/components/workerc.vue",
+				"dist/static/img/slid1.png",
+				"src/components/imgs/defaultjfgoods.png",
+				"dist/static/img/slid3.png",
+				"dist/static/js/32.js",
+				"build/webpack.dev.conf.js",
+				"dist/static/js/54.js",
+				"index.html",
+				"src/components/imgs/search.png",
+				"src/components/forum.vue",
+				"dist/static/js/19.js",
+				"dist/static/js/52.js",
+				"src/components/imgs/say.png",
+				"src/components/imgs/errornews.png",
+				"src/components/imgs/minecard.png",
+				"config/index.js",
+				"src/components/integral.vue",
+				"src/components/imgs/eight7bak.png",
+				"src/components/imgs/wd.png",
+				"src/components/imgs/heart4.png",
+				"src/components/imgs/slid2.png",
+				"src/routerconfig/routers.js",
+				"src/components/goodsdetail.vue",
+				"src/components/imgs/setting.png",
+				"src/components/imgs/zanbef.png",
+				"src/components/askteacher_details.vue",
+				"src/components/imgs/zhuanti.png",
+				"src/components/imgs/del.png",
+				"src/components/mine_information.vue",
+				"test/e2e/custom-assertions/elementCount.js",
+				"src/components/imgs/VIP2.png",
+				"src/components/mine_aboutus.vue",
+				"dist/static/js/55.js",
+				"dist/static/js/25.js",
+				"src/App.vue",
+				"src/components/imgs/askonlinebg.png",
+				"dist/static/js/33.js",
+				"src/js/zepto.js",
+				"src/components/imgs/xx.png",
+				"src/components/imgs/pinglun11.png",
+				"src/components/mine_bindphone.vue",
+				"src/components/imgs/bohui.png",
+				"build/dev-client.js",
+				"dist/static/js/29.js",
+				"src/components/imgs/advice.png",
+				"src/components/imgs/jfactive.png",
+				"src/components/imgs/eight3.png",
+				"src/components/imgs/shenhe.png",
+				"src/components/index_navimgs/nav2.png",
+				"src/components/imgs/wechat_moment.png",
+				"src/components/imgs/huinotice.png",
+				"dist/static/js/15.js",
+				"src/components/askonline.vue",
+				"src/components/worker_life.vue",
+				"dist/static/js/3.js",
+				"src/components/imgs/sina.png",
+				"src/components/index_navimgs/nav5.png",
+				"dist/static/js/5.js",
+				"src/components/blank.vue",
+				"src/components/imgs/nav.png",
+				"src/components/imgs/ghzixun.png",
+				"src/components/heartthings_chat.vue",
+				"src/components/mine_collect.vue",
+				"src/components/unionstyle.vue",
+				"src/components/unionspecial.vue",
+				"src/components/index_navimgs/nav9.png",
+				"src/components/imgs/eight5bak.png",
+				"src/components/login_find_password.vue",
+				"src/js/kinerLottery.js",
+				"dist/static/js/34.js",
+				"dist/static/js/8.js",
+				"dist/static/js/16.js",
+				"src/components/hearttest_begin.vue",
+				"src/components/index_navimgs/nav3.png",
+				"src/components/mine_approve.vue",
+				"dist/static/img/element-icons.svg",
+				"src/components/workersay_main.vue",
+				"src/components/index_navimgs/nav4.png",
+				"src/components/homepage.vue",
+				"dist/static/js/43.js",
+				"config/test.env.js",
+				"src/components/mine_resetpassword.vue",
+				"dist/static/js/7.js",
+				"dist/static/js/53.js",
+				"src/components/square.vue",
+				"dist/static/js/18.js",
+				"dist/static/js/40.js",
+				"src/components/worker_say.vue",
+				"dist/static/img/aboutus.png",
+				"src/components/imgs/aboutus.png",
+				"src/components/scorerules.vue",
+				"src/components/imgs/bj.png",
+				"test/e2e/specs/test.js",
+				"src/components/heartask.vue",
+				"dist/static/js/6.js",
+				"src/components/imgs/wdactive.png",
+				"dist/static/js/24.js",
+				"build/utils.js",
+				"src/components/imgs/life3.png",
+				"src/components/imgs/noVIP1.png",
+				"dist/static/js/21.js",
+				"dist/static/js/14.js",
+				"src/components/index_navimgs/nav8.png",
+				"src/components/wantask.vue",
+				"dist/static/js/4.js",
+				"src/components/imgs/yyy.png",
+				"dist/static/js/11.js",
+				"build/dev-server.js",
+				"src/components/template/calendar.vue",
+				"src/components/imgs/life4.png",
+				"src/components/imgs/sysmessage.png",
+				"src/components/imgs/123.png",
+				"dist/static/js/17.js",
+				"test/e2e/runner.js",
+				"build/build.js",
+				"src/components/imgs/start.png",
+				"dist/static/js/0.js",
+				"dist/static/js/20.js",
+				"src/components/imgs/hdactive.png",
+				"src/components/mine_info_member.vue",
+				"src/components/imgs/huifu.png",
+				"build/webpack.prod.conf.js",
+				"src/components/imgs/wx.png",
+				"dist/static/js/30.js"
+			]
+		}
+	},
+	"unpackage": [
+	  "build/build.js",
+	  "build/check-versions.js",
+	  "build/dev-client.js",
+	  "build/dev-server.js",
+	  "build/utils.js",
+	  "build/webpack.base.conf.js",
+	  "build/webpack.dev.conf.js",
+	  "build/webpack.prod.conf.js",
+	  "config/dev.env.js",
+	  "config/index.js",
+	  "config/prod.env.js",
+	  "config/test.env.js",
+	  "src/assets/logo.png",
+	  "src/components/imgs/3824416.jpg",
+	  "src/components/imgs/yyy.png",
+	  "src/plugins/mui.js",
+	  "src/routerconfig/routers.js",
+	  "src/vuex/store.js",
+	  "src/App.vue",
+	  "src/main.js",
+	  "test/e2e/custom-assertions/elementCount.js",
+	  "test/e2e/nightwatch.conf.js",
+	  "test/e2e/runner.js",
+	  "test/e2e/specs/test.js",
+	  "test/unit/index.js",
+	  "test/unit/karma.conf.js",
+	  "test/unit/specs/Hello.spec.js",
+	  "README.md",
+	  "index.html",
+	  "package.json",
+	  "src/components/imgs/123.png",
+	  "src/components/imgs/1234.png",
+	  "src/components/imgs/VIP2.png",
+	  "src/components/imgs/aboutus.png",
+	  "src/components/imgs/activity.png",
+	  "src/components/imgs/advice.png",
+	  "src/components/imgs/askbg.png",
+	  "src/components/imgs/askonlinebg.png",
+	  "src/components/imgs/banner1.png",
+	  "src/components/imgs/banner2.png",
+	  "src/components/imgs/banner3.png",
+	  "src/components/imgs/bj.png",
+	  "src/components/imgs/bohui.png",
+	  "src/components/imgs/button.png",
+	  "src/components/imgs/checkjifen.png",
+	  "src/components/imgs/collect.png",
+	  "src/components/imgs/defaulthead.png",
+	  "src/components/imgs/defaultjfgoods.png",
+	  "src/components/imgs/defaultyhq.png",
+	  "src/components/imgs/del.png",
+	  "src/components/imgs/dingdan.png",
+	  "src/components/imgs/eight1.png",
+	  "src/components/imgs/eight1bak.png",
+	  "src/components/imgs/eight2.png",
+	  "src/components/imgs/eight2bak.png",
+	  "src/components/imgs/eight3.png",
+	  "src/components/imgs/eight3bak.png",
+	  "src/components/imgs/eight4.png",
+	  "src/components/imgs/eight4bak.png",
+	  "src/components/imgs/eight5.png",
+	  "src/components/imgs/eight5bak.png",
+	  "src/components/imgs/eight6.png",
+	  "src/components/imgs/eight6bak.png",
+	  "src/components/imgs/eight7.png",
+	  "src/components/imgs/eight7bak.png",
+	  "src/components/imgs/eight8.png",
+	  "src/components/imgs/eight8bak.png",
+	  "src/components/imgs/errorBanner.png",
+	  "src/components/imgs/errorjifen.png",
+	  "src/components/imgs/errornews.png",
+	  "src/components/imgs/errorpng.png",
+	  "src/components/imgs/errorpng0.png",
+	  "src/components/imgs/finish.png",
+	  "src/components/imgs/getjifen.png",
+	  "src/components/imgs/ghjz.png",
+	  "src/components/imgs/ghzixun.png",
+	  "src/components/imgs/hd.png",
+	  "src/components/imgs/hdactive.png",
+	  "src/components/imgs/heart1.png",
+	  "src/components/imgs/heart2.png",
+	  "src/components/imgs/heart3.png",
+	  "src/components/imgs/heart4.png",
+	  "src/components/imgs/hot.png",
+	  "src/components/imgs/huifu.png",
+	  "src/components/imgs/huifuli.png",
+	  "src/components/imgs/huinotice.png",
+	  "src/components/imgs/imgadd.png",
+	  "src/components/imgs/jf.png",
+	  "src/components/imgs/jfactive.png",
+	  "src/components/imgs/jifen.png",
+	  "src/components/imgs/jifenbg.png",
+	  "src/components/imgs/jifenbg2.png",
+	  "src/components/imgs/jifenrules.png",
+	  "src/components/imgs/juli.png",
+	  "src/components/imgs/layer1.png",
+	  "src/components/imgs/layer2.png",
+	  "src/components/imgs/layer3.png",
+	  "src/components/imgs/layer4.png",
+	  "src/components/imgs/life1.png",
+	  "src/components/imgs/life2.png",
+	  "src/components/imgs/life3.png",
+	  "src/components/imgs/life4.png",
+	  "src/components/imgs/lotteryBtn.png",
+	  "src/components/imgs/lotteryContent.png",
+	  "src/components/imgs/minecard.png",
+	  "src/components/imgs/nav.png",
+	  "src/components/imgs/news1.jpg",
+	  "src/components/imgs/news2.png",
+	  "src/components/imgs/noVIP1.png",
+	  "src/components/imgs/phone.png",
+	  "src/components/imgs/pinglun.png",
+	  "src/components/imgs/pinglun11.png",
+	  "src/components/imgs/qd.png",
+	  "src/components/imgs/qiandaobg.png",
+	  "src/components/imgs/qiandaobtn.png",
+	  "src/components/imgs/qq .png",
+	  "src/components/imgs/rotate-static.png",
+	  "src/components/imgs/say.png",
+	  "src/components/imgs/sc.png",
+	  "src/components/imgs/search.png",
+	  "src/components/imgs/setting.png",
+	  "src/components/imgs/share.png",
+	  "src/components/imgs/shenhe.png",
+	  "src/components/imgs/shoucang.png",
+	  "src/components/imgs/sina.png",
+	  "src/components/imgs/slid1.png",
+	  "src/components/imgs/slid2.png",
+	  "src/components/imgs/slid3.png",
+	  "src/components/imgs/slidbtn.png",
+	  "src/components/imgs/start.png",
+	  "src/components/imgs/sysmessage.png",
+	  "src/components/imgs/tel.png",
+	  "src/components/imgs/tongguo.png",
+	  "src/components/imgs/vip.png",
+	  "src/components/imgs/wd.png",
+	  "src/components/imgs/wdactive.png",
+	  "src/components/imgs/wechat.png",
+	  "src/components/imgs/wechat_moment.png",
+	  "src/components/imgs/wx.png",
+	  "src/components/imgs/xx.png",
+	  "src/components/imgs/zanafter.png",
+	  "src/components/imgs/zanbef.png",
+	  "src/components/imgs/zanbefore.png",
+	  "src/components/imgs/zhigongshequ.png",
+	  "src/components/imgs/zhuanfont.png",
+	  "src/components/imgs/zhuanfont2.png",
+	  "src/components/imgs/zhuanti.png",
+	  "src/components/imgs/zy.png",
+	  "src/components/imgs/zyactive.png",
+	  "src/components/index_navimgs/chat.png",
+	  "src/components/index_navimgs/nav1.png",
+	  "src/components/index_navimgs/nav2.png",
+	  "src/components/index_navimgs/nav3.png",
+	  "src/components/index_navimgs/nav4.png",
+	  "src/components/index_navimgs/nav5.png",
+	  "src/components/index_navimgs/nav6.png",
+	  "src/components/index_navimgs/nav8.png",
+	  "src/components/index_navimgs/nav9.png",
+	  "src/components/index_navimgs/yes.png",
+	  "src/components/template/calendar.vue",
+	  "src/components/template/luckDraw.vue",
+	  "src/components/activity.vue",
+	  "src/components/activityDetails.vue",
+	  "src/components/askonline.vue",
+	  "src/components/askteacher_details.vue",
+	  "src/components/blank.vue",
+	  "src/components/cache.vue",
+	  "src/components/details.vue",
+	  "src/components/forum.vue",
+	  "src/components/forumdetail.vue",
+	  "src/components/goodsdetail.vue",
+	  "src/components/guide.vue",
+	  "src/components/heartask.vue",
+	  "src/components/heartask_things.vue",
+	  "src/components/hearttest_begin.vue",
+	  "src/components/hearttest_info.vue",
+	  "src/components/hearttest_result.vue",
+	  "src/components/heartthings_chat.vue",
+	  "src/components/home.vue",
+	  "src/components/homepage.vue",
+	  "src/components/integra_sureorderl.vue",
+	  "src/components/integral.vue",
+	  "src/components/integral_make.vue",
+	  "src/components/integral_order.vue",
+	  "src/components/integral_orderdetail.vue",
+	  "src/components/join.vue",
+	  "src/components/login.vue",
+	  "src/components/login_find_password.vue",
+	  "src/components/message.vue",
+	  "src/components/mine.vue",
+	  "src/components/mine_aboutus.vue",
+	  "src/components/mine_activity.vue",
+	  "src/components/mine_address.vue",
+	  "src/components/mine_address_updata.vue",
+	  "src/components/mine_advice.vue",
+	  "src/components/mine_approve.vue",
+	  "src/components/mine_authcode.vue",
+	  "src/components/mine_bindphone.vue",
+	  "src/components/mine_collect.vue",
+	  "src/components/mine_ghlist.vue",
+	  "src/components/mine_info_member.vue",
+	  "src/components/mine_information.vue",
+	  "src/components/mine_resetpassword.vue",
+	  "src/components/mine_security.vue",
+	  "src/components/mine_setting.vue",
+	  "src/components/mine_setting_universal.vue",
+	  "src/components/mine_sex.vue",
+	  "src/components/mine_subname.vue",
+	  "src/components/notice.vue",
+	  "src/components/scorerules.vue",
+	  "src/components/searchpage.vue",
+	  "src/components/signin.vue",
+	  "src/components/square.vue",
+	  "src/components/testlsz.vue",
+	  "src/components/unionInfo.vue",
+	  "src/components/unionnews.vue",
+	  "src/components/unionnotice.vue",
+	  "src/components/unionspecial.vue",
+	  "src/components/unionstyle.vue",
+	  "src/components/wantask.vue",
+	  "src/components/worker_life.vue",
+	  "src/components/worker_say.vue",
+	  "src/components/workerc.vue",
+	  "src/components/workersay_main.vue",
+	  "src/js/kinerLottery.js",
+	  "src/js/modular.js",
+	  "src/js/zepto.js",
+	  "src/plugins/ontouch.js"
+	]
+}

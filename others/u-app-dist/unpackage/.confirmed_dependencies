@@ -1,0 +1,11 @@
+{
+  "dist/index.html": {
+    "resources": [
+      "dist/static/js/manifest.js",
+      "dist/static/js/app.js",
+      "dist/static/js/vendor.js",
+      "dist/static/css/app.css"
+    ],
+    "refer": []
+  }
+}
